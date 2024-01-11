@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movie Tickets</title>
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+	<!-- Bootstrap JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+	<!-- CDN icons Bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+	<!-- Font Awesome icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css">
+		input{
+			width:40px;
+			height:40px;
+			cursor:pointer;
+		}
+		input[type="checkbox"]{
+			appearance:none;
+			background:#BDEDFF;
+			border-radius:10px;
+			border:1px solid;
+		}
+		input[type="checkbox"]:after{
+			content:"\f00c";
+			color:white;
+			display:none;
+
+		}
+		input[type="checkbox"]:hover{
+			background-color:springgreen;
+		}
+		input[type="checkbox"]:checked{
+			background:#52D017;
+			border:1px solid;
+		}
+		.rows{
+			width:99%;
+			padding-left:70px;
+		}
+		small{
+			margin-left:18px;
+		}
+		.rock{
+			/*margin-left:20px;*/
+		}
+		#total{
+			visibility:hidden;
+			background:#DADBDD;
+			text-align:center;
+			font-weight:bold;
+		}
+		.amount{
+			margin-top:40px;
+			width:140px;
+		}
+		.rates{
+			width:250px;
+			margin:auto;
+		}
+		span{
+			/*margin-bottom:50px;*/
+			margin-right:5px;
+		}
+		a{
+			color:white;
+		}
+		.navbar-brand{
+			margin-left:40px;
+		}
+		.title{
+			font-weight:bold;
+			font-family:cursive;
+		}
+		.round{
+			margin:auto;
+			width:100px;
+			height:50px;
+			border-radius:50%;
+			background-color:springgreen;
+		}
+		.thumb{
+			text-align:center;
+			margin-top:14px;
+			font-weight:bold;
+			font-size:30px;
+			width:100%;
+		}
+		a{
+			text-decoration:none;
+		}
+		.exit{
+			margin-left:200px;
+		}
+		.screen{
+			border-radius:7px;
+			color:white;
+			font-weight:bold;
+		}
+		.screen1{
+			border-radius:7px 7px 0px 0px;
+		}
+	</style>
+	<script type="text/javascript">
+		var a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,x,y,z,A,B,C,D,E,F,G,H,I,J,K,L,M,N;
+		var O,P,Q,R,S,T,U,V,W,X,Y,Z;
+		function app(){
+			if(form.check1.checked==true)
+				a=150;
+			else
+				a=0;
+
+			if(form.check2.checked==true)
+				b=150
+			else
+				b=0
+			if(form.check3.checked==true)
+				c=150;
+			else
+				c=0;
+
+			if(form.check4.checked==true)
+				d=150
+			else
+				d=0
+			if(form.check5.checked==true)
+				e=150;
+			else
+				e=0;
+
+			if(form.check6.checked==true)
+				f=150
+			else
+				f=0
+			if(form.check7.checked==true)
+				g=150;
+			else
+				g=0;
+
+			if(form.check8.checked==true)
+				h=150
+			else
+				h=0
+			if(form.check9.checked==true)
+				i=150
+			else
+				i=0
+			if(form.check10.checked==true)
+				j=150
+			else
+				j=0
+			if(form.check11.checked==true)
+				k=150;
+			else
+				k=0;
+
+			if(form.check12.checked==true)
+				l=150
+			else
+				l=0
+			if(form.check13.checked==true)
+				m=150;
+			else
+				m=0;
+
+			if(form.check14.checked==true)
+				n=150
+			else
+				n=0
+			if(form.check15.checked==true)
+				o=150;
+			else
+				o=0;
+
+			if(form.check16.checked==true)
+				p=150
+			else
+				p=0
+			if(form.check17.checked==true)
+				q=150;
+			else
+				q=0;
+
+			if(form.check18.checked==true)
+				r=150
+			else
+				r=0
+			if(form.check19.checked==true)
+				s=150
+			else
+				s=0
+			if(form.check20.checked==true)
+				u=150
+			else
+				u=0
+			if(form.check21.checked==true)
+				v=150
+			else
+				v=0
+			if(form.check21.checked==true)
+				w=150
+			else
+				w=0
+			if(form.check22.checked==true)
+				F=150
+			else
+				F=0
+			if(form.check23.checked==true)
+				x=150
+			else
+				x=0
+			if(form.check24.checked==true)
+				y=150
+			else
+				y=0
+			if(form.check25.checked==true)
+				z=150
+			else
+				z=0
+			if(form.check26.checked==true)
+				A=150
+			else
+				A=0
+			if(form.check27.checked==true)
+				B=150
+			else
+				B=0
+			if(form.check28.checked==true)
+				C=150
+			else
+				C=0
+			if(form.check29.checked==true)
+				D=150
+			else
+				D=0
+			if(form.check30.checked==true)
+				E=150
+			else
+				E=0
+			if(form.check31.checked==true)
+				G=100
+			else
+				G=0
+			if(form.check32.checked==true)
+				H=100
+			else
+				H=0
+			if(form.check33.checked==true)
+				I=100
+			else
+				I=0
+			if(form.check34.checked==true)
+				J=100
+			else
+				J=0
+			if(form.check35.checked==true)
+				K=100
+			else
+				K=0
+			if(form.check36.checked==true)
+				L=100
+			else
+				L=0
+			if(form.check37.checked==true)
+				M=100
+			else
+				M=0
+			if(form.check38.checked==true)
+				N=100
+			else
+				N=0
+			if(form.check39.checked==true)
+				O=100
+			else
+				O=0
+			if(form.check40.checked==true)
+				P=100
+			else
+				P=0
+			if(form.check41.checked==true)
+				Q=100
+			else
+				Q=0
+			if(form.check42.checked==true)
+				R=100
+			else
+				R=0
+			if(form.check43.checked==true)
+				S=100
+			else
+				S=0
+			if(form.check44.checked==true)
+				T=100
+			else
+				T=0
+			if(form.check45.checked==true)
+				U=100
+			else
+				U=0
+			if(form.check46.checked==true)
+				V=100
+			else
+				V=0
+			if(form.check47.checked==true)
+				W=100
+			else
+				W=0
+			if(form.check48.checked==true)
+				X=100
+			else
+				X=0
+			if(form.check49.checked==true)
+				Y=100
+			else
+				Y=0
+			if(form.check50.checked==true)
+				Z=100
+			else
+				Z=0
+
+
+		var sum;
+		if(form.check1.checked||form.check2.checked||form.check3.checked||form.check4.checked||form.check5.checked||form.check6.checked||form.check7.checked||form.check8.checked||form.check9.checked||form.check10.checked||form.check11.checked||form.check12.checked||form.check13.checked||form.check14.checked||form.check15.checked||form.check16.checked||form.check17.checked||form.check18.checked||form.check19.checked||form.check20.checked||form.check21.checked||form.check22.checked||form.check23.checked||form.check24.checked||form.check25.checked||form.check26.checked||form.check27.checked||form.check28.checked||form.check29.checked||form.check30.checked||form.check31.checked||form.check32.checked||form.check33.checked||form.check34.checked||form.check35.checked||form.check36.checked||form.check37.checked||form.check38.checked||form.check39.checked||form.check40.checked||form.check41.checked||form.check42.checked||form.check43.checked||form.check44.checked||form.check45.checked||form.check46.checked||form.check47.checked||form.check48.checked||form.check49.checked||form.check50.checked==true){
+			t=parseInt(a)
+			t1=parseInt(b)
+			t2=parseInt(c)
+			t3=parseInt(d)
+			t4=parseInt(e)
+			t5=parseInt(f)
+			t6=parseInt(g)
+			t7=parseInt(h)
+			t8=parseInt(i)
+			t9=parseInt(j)
+			t10=parseInt(k)
+			t11=parseInt(l)
+			t12=parseInt(m)
+			t13=parseInt(n)
+			t14=parseInt(o)
+			t15=parseInt(p)
+			t16=parseInt(q)
+			t17=parseInt(r)
+			t18=parseInt(s)
+			t19=parseInt(u)
+			t20=parseInt(v)
+			t21=parseInt(F)
+			t22=parseInt(x)
+			t23=parseInt(y)
+			t24=parseInt(z)
+			t25=parseInt(A)
+			t26=parseInt(B)
+			t27=parseInt(C)
+			t28=parseInt(D)
+			t29=parseInt(E)
+			// Non-A/C
+			t30=parseInt(G)
+			t31=parseInt(H)
+			t32=parseInt(I)
+			t33=parseInt(J)
+			t34=parseInt(K)
+			t35=parseInt(L)
+			t36=parseInt(M)
+			t37=parseInt(N)
+			t38=parseInt(O)
+			t39=parseInt(P)
+			t40=parseInt(Q)
+			t41=parseInt(R)
+			t42=parseInt(S)
+			t43=parseInt(T)
+			t44=parseInt(U)
+			t45=parseInt(V)
+			t46=parseInt(X)
+			t47=parseInt(Y)
+			t48=parseInt(Z)
+			t49=parseInt(W)
+
+			sum=t+t1+t2+t3+t4+t5+t6+t7+t8+t9+t10+t11+t12+t13+t14+t15+t16+t17+t18+t19+t20+t21+t22+t23+t24+t25+t26+t27+t28+t29+t30+t31+t32+t33+t34+t35+t36+t37+t38+t39+t40+t41+t42+t43+t44+t45+t46+t47+t48+t49
+			document.getElementById('total').value=`Rs.${sum}`
+			document.getElementById('total').style.visibility="visible"
+			
+		}
+		else{
+			document.getElementById('total').value=0
+			document.getElementById('total').style.visibility="hidden"
+			document.getElementById('Proceed').style.visibility="hidden"
+			
+		}
+
+
+		}
+
+	</script>
+</head>
+<body>
+	<nav class="navbar bg-body-tertiary fixed-top">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#"><h2 class="title">M🖤vieJ💕y</h2></a>
+	    <select class="form-select w-50" aria-label="Default select example">
+		  <option selected>Select Location</option>
+		  <option value="1">Hyderabad</option>
+		  <option value="2">Nandyal</option>
+		  <option value="3">Kurnool</option>
+		</select>
+	    
+	    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+	      <div class="offcanvas-header">
+	        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">M🖤vieJ💕y</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+	      </div>
+	      <div class="offcanvas-body">
+	        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+	          <li class="nav-item">
+	            <a class="nav-link active" aria-current="page" href="#">Home</a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" href="#">Link</a>
+	          </li>
+	          <li class="nav-item dropdown">
+	            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	              Dropdown
+	            </a>
+	            <ul class="dropdown-menu">
+	              <li><a class="dropdown-item" href="#">Action</a></li>
+	              <li><a class="dropdown-item" href="#">Another action</a></li>
+	              <li>
+	                <hr class="dropdown-divider">
+	              </li>
+	              <li><a class="dropdown-item" href="#">Something else here</a></li>
+	            </ul>
+	          </li>
+	        </ul>
+	        <form class="d-flex mt-3" role="search">
+	          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+	          <button class="btn btn-outline-success" type="submit">Search</button>
+	        </form>
+	      </div>
+	    </div>
+	  </div>
+	</nav>
+	<div class="container mt-5 rock">
+		<form enctype="multipart/formdata" action="" id="myform" name="form" method="post">
+		<div class="container bg-light py-3 rows">
+			<input type="text" name="" class="form-control rates" value="Delux A/C(Each Ticket Rs.150)">
+			<div class="row mt-3 ">
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><span>A</span><input type="checkbox" name="check1" id="check1" onclick="app()"><br><small>1</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check2" id="check2" onclick="app()"><br><small>2</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check3" id="check3" onclick="app()"><br><small>3</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check4" id="check4" onclick="app()"><br><small>4</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1 me-5"><input type="checkbox" name="check5" id="check5" onclick="app()"><br><small>5</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1 "><input type="checkbox" name="check6" id="check6" onclick="app()"><br><small>6</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check7" id="check7" onclick="app()"><br><small>7</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check8" id="check8" onclick="app()"><br><small>8</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check9" id="check9" onclick="app()"><br><small>9</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check10" id="check10" onclick="app()"><br><small>10</small></div>
+
+			</div>
+			<div class="row mt-2 ">
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><span>B</span><input type="checkbox" name="check11" id="check11" onclick="app()"><br><small>1</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check12" id="check12" onclick="app()"><br><small>2</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check13" id="check13" onclick="app()"><br><small>3</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check14" id="check14" onclick="app()"><br><small>4</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1 me-5"><input type="checkbox" name="check15" id="check15" onclick="app()"><br><small>5</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1 "><input type="checkbox" name="check16" id="check16" onclick="app()"><br><small>6</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check17" id="check17" onclick="app()"><br><small>7</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check18" id="check18" onclick="app()"><br><small>8</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check19" id="check19" onclick="app()"><br><small>9</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check20" id="check20" onclick="app()"><br><small>10</small></div>
+			</div>
+			<div class="row mt-2 ">
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><span>C</span><input type="checkbox" name="check21" id="check21" onclick="app()"><br><small>1</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check22" id="check22" onclick="app()"><br><small>2</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check23" id="check23" onclick="app()"><br><small>3</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check24" id="check24" onclick="app()"><br><small>4</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1 me-5"><input type="checkbox" name="check15" id="check25" onclick="app()"><br><small>5</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1 "><input type="checkbox" name="check26" id="check26" onclick="app()"><br><small>6</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check27" id="check27" onclick="app()"><br><small>7</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check28" id="check28" onclick="app()"><br><small>8</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check29" id="check29" onclick="app()"><br><small>9</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check30" id="check30" onclick="app()"><br><small>10</small></div>
+			</div>	
+			<hr>
+			<!-- Non-A/C-->
+			<input type="text" name="" class="form-control rates" value="Non-A/C (Each Ticket Rs.100)">
+			<div class="row mt-3 ">
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><span>D</span><input type="checkbox" name="check31" id="check31" onclick="app()"><br><small>1</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check32" id="check32" onclick="app()"><br><small>2</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check33" id="check33" onclick="app()"><br><small>3</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check34" id="check34" onclick="app()"><br><small>4</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1 me-5"><input type="checkbox" name="check35" id="check35" onclick="app()"><br><small>5</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1 "><input type="checkbox" name="check36" id="check36" onclick="app()"><br><small>6</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check37" id="check37" onclick="app()"><br><small>7</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check38" id="check38" onclick="app()"><br><small>8</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check39" id="check39" onclick="app()"><br><small>9</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check40" id="check40" onclick="app()"><br><small>10</small></div>
+
+			</div>
+			<div class="row mt-2 ">
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><span>E</span><input type="checkbox" name="check41" id="check41" onclick="app()"><br><small>1</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check42" id="check42" onclick="app()"><br><small>2</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check43" id="check43" onclick="app()"><br><small>3</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check44" id="check44" onclick="app()"><br><small>4</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1 me-5"><input type="checkbox" name="check45" id="check45" onclick="app()"><br><small>5</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1 "><input type="checkbox" name="check46" id="check46" onclick="app()"><br><small>6</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check47" id="check47" onclick="app()"><br><small>7</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check48" id="check48" onclick="app()"><br><small>8</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check49" id="check49" onclick="app()"><br><small>9</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check50" id="check50" onclick="app()"><br><small>10</small></div>
+			</div>
+			<!-- <div class="row mt-2 ">
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check51" id="check51" onclick="app()"><br><small>1</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check52" id="check52" onclick="app()"><br><small>2</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check53" id="check53" onclick="app()"><br><small>3</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check54" id="check54" onclick="app()"><br><small>4</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1 me-5"><input type="checkbox" name="check55" id="check55" onclick="app()"><br><small>5</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1 "><input type="checkbox" name="check56" id="check56" onclick="app()"><br><small>6</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check57" id="check57" onclick="app()"><br><small>7</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check58" id="check58" onclick="app()"><br><small>8</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check59" id="check59" onclick="app()"><br><small>9</small></div>
+				<div class="col col-1 col-lg-1 col-sm-1 col-md-1"><input type="checkbox" name="check60" id="check60" onclick="app()"><br><small>10</small></div>
+			</div> -->
+				
+			<div class="row mt-5">
+				<div class="col-4 bg-secondary m-auto screen1">
+					.
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6 m-auto text-center bg-secondary screen">
+					<h6>Screen Here</h6>
+				</div>
+			</div>
+		</div>	
+	</form>
+	</div>
+	<div class="container amount mt-5">
+		<input type="text" value=0 name="" id="total" class="form-control">
+	</div>
+	<div class="container mt-5 text-center" id="show">
+		<button class="btn btn-success" id="Proceed" data-bs-toggle="modal" data-bs-target="#proceedmodal">Proceed</button>
+		<button class="btn btn-danger" id="Cancel"><a href="movies_tickets.html">Cancel</a></button>
+		<button class="btn btn-primary" id="Cancel"><a href="index.html">Home</a></button>
+	</div>
+	
+	<!-- footer starts here -->
+	<nav class="navbar bg-dark mt-5">
+		<h5 class="text-white text-center m-auto">
+			<a href="https://www.google.com/search?q=facebook&oq=face&gs_lcrp=EgZjaHJvbWUqEAgAEAAYgwEY4wIYsQMYgAQyEAgAEAAYgwEY4wIYsQMYgAQyEwgBEC4YgwEYxwEYsQMY0QMYgAQyCQgCEEUYORiABDINCAMQABiDARixAxiABDINCAQQABiDARixAxiABDIGCAUQBRhAMgYIBhBFGDwyBggHEEUYPNIBCDIyNTNqMGo0qAIAsAIA&sourceid=chrome&ie=UTF-8"><i class="bi bi-facebook"></i></a>
+			<a href="https://www.google.com/search?q=instagram&oq=insta&gs_lcrp=EgZjaHJvbWUqEggDEAAYQxiDARixAxiABBiKBTIGCAAQRRg5MgYIARBFGEAyDAgCECMYJxiABBiKBTISCAMQABhDGIMBGLEDGIAEGIoFMg0IBBAAGIMBGLEDGIAEMgYIBRBFGDwyBggGEEUYPDIGCAcQBRhA0gEIMjc0NmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8"><i class="bi bi-instagram"></i></a>
+			<a href="https://www.google.com/search?q=twitter&oq=twitter&gs_lcrp=EgZjaHJvbWUqBwgAEAAYjwIyBwgAEAAYjwIyGwgBEC4YQxiDARjHARixAxjJAxjRAxiABBiKBTIGCAIQRRhAMgwIAxAAGEMYgAQYigUyEggEEAAYQxiDARixAxiABBiKBTIMCAUQABhDGIAEGIoFMgYIBhBFGDwyBggHEEUYPNIBCDEyODBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"><i class="bi bi-twitter"></i></a><br>
+		Developed By Iyaluru DurgaPrasad</h5>
+	</nav>
+	<!-- footer ends here -->
+
+
+	<!-- modal for process starts here -->
+	<div class="modal fade mt-5" id="proceedmodal"> 
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="btn btn-close" data-bs-dismiss="modal"></button>
+				</div>
+				<div class="modal-body">
+					<div class="round"><i class="fa-solid fa-thumbs-up thumb"></i></div>
+					<h3 class="text-center">Payment Successfully Done!</h3>
+					<button class="btn text-center btn-primary exit"><a href="index.html">Exit</a></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- modal for process ends here -->
+</body>
+</html>
